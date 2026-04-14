@@ -1,0 +1,161 @@
+:root {
+  --brand-dark: #254d3f;
+  --brand: #2f6e57;
+  --brand-light: #75ad86;
+  --accent: #4a90e2;
+  --surface: #ffffff;
+  --surface-soft: #f4f6f3;
+  --bg: #eef2ed;
+  --text: #1c2b26;
+  --muted: #5f6c65;
+  --border: #d8e1da;
+}
+
+/* App-wide styles */
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: var(--bg);
+  color: var(--text);
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+header {
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
+}
+
+footer {
+  margin-top: auto;
+  padding: 2rem 0;
+  background: #1d352d;
+}
+
+footer p {
+  color: #cdd7d0;
+  margin: 0;
+}
+
+.card {
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+  border: 1px solid var(--border);
+  background: var(--surface);
+  border-radius: 1rem;
+}
+
+.card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.08) !important;
+}
+
+.btn-add-to-cart {
+  background-color: var(--accent);
+  border: none;
+  color: white;
+}
+
+.btn-add-to-cart:hover {
+  background-color: #3779ba;
+  color: white;
+}
+
+.price-text {
+  color: var(--brand);
+  font-weight: 700;
+  font-size: 1.1rem;
+}
+
+.cart-header {
+  background: linear-gradient(135deg, var(--brand-dark), var(--brand));
+}
+
+.cart-item {
+  padding: 1rem 0;
+}
+
+.form-control.is-invalid,
+.form-select.is-invalid {
+  border-color: #dc3545;
+  background-image: none;
+}
+
+.form-control.is-valid,
+.form-select.is-valid {
+  border-color: #198754;
+  background-image: none;
+}
+
+.text-danger {
+  font-size: 0.875rem;
+  margin-top: 0.25rem;
+}
+
+.btn-success {
+  background-color: var(--brand);
+  border-color: var(--brand);
+  color: white;
+}
+
+.btn-success:hover,
+.btn-success:focus {
+  background-color: var(--brand-dark);
+  border-color: var(--brand-dark);
+}
+
+.btn-outline-light {
+  color: white;
+  border-color: rgba(255, 255, 255, 0.7);
+}
+
+.btn-outline-light:hover,
+.btn-outline-light:focus {
+  background-color: rgba(255, 255, 255, 0.12);
+  border-color: white;
+}
+
+.btn-light {
+  background-color: rgba(255, 255, 255, 0.95);
+  border-color: rgba(255, 255, 255, 0.65);
+  color: var(--text);
+}
+
+.btn-light:hover,
+.btn-light:focus {
+  background-color: white;
+}
+
+.btn-secondary {
+  background-color: #687d71;
+  border-color: #687d71;
+}
+
+.btn-secondary:hover,
+.btn-secondary:focus {
+  background-color: #58685d;
+  border-color: #58685d;
+}
+
+@media (max-width: 768px) {
+  .container-fluid {
+    padding: 0 0.5rem;
+  }
+
+  .card {
+    margin-bottom: 1rem;
+  }
+
+  header h2 {
+    font-size: 1.2rem;
+  }
+
+  header .btn {
+    font-size: 0.85rem;
+    padding: 0.4rem 0.8rem;
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "attendees": [
+    {
+      "fullName": "Alex Green",
+      "email": "alex.green@example.com",
+      "gradeLevel": "Junior",
+      "institution": "Penn State",
+      "contactNumber": "1234567890"
+    }
+  ],
+  "sessions": [
+    {
+      "sessionID": "S101",
+      "sessionTitle": "Wildlife Tracking Basics",
+      "workshop": "Field Techniques",
+      "duration": "2 hours",
+      "registrationFee": "$45.00",
+      "speaker": "Dr. Marina Brooks",
+      "additionalInfo": "Introductory session for all attendees"
+    },
+    {
+      "sessionID": "S102",
+      "sessionTitle": "Protecting Endangered Species",
+      "workshop": "Conservation Methods",
+      "duration": "3 hours",
+      "registrationFee": "$60.00",
+      "speaker": "Prof. Ethan White",
+      "additionalInfo": "Includes case studies and group work"
+    }
+  ],
+  "cart": []
+}
